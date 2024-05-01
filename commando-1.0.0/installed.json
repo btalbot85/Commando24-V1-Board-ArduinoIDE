@@ -1,0 +1,38 @@
+{
+  "packages": [
+    {
+      "name": "commando",
+      "maintainer": "Brandon Talbot",
+      "websiteUrl": "https://github.com/btalbot85",
+      "Url": "http://localhost:9000/package_commando_CommandoRNode_index.json",
+      "email": "",
+      "platforms": [
+        {
+          "name": "CommandoRNode",
+          "architecture": "esp32",
+          "version": "1.0.0",
+          "deprecated": false,
+          "category": "Contributed",
+          "url": "http://localhost:9000/commando-1.0.0.tar.gz",
+          "archiveFileName": "Commando-1.0.0.tar.gz",
+          "checksum": "SHA-256:ffec27feaefd6a5dca325cffee7d10e121f6948231c1e851e4e2ca66aa669722",
+          "size": "244043347",
+          "boards": [
+            {
+              "name": "Commando RNode 2.4Ghz"
+            }
+          ],
+          "help": {},
+          "toolsDependencies": [],
+          "discoveryDependencies": [],
+          "monitorDependencies": []
+        }
+      ],
+      "tools": [],
+      "help": {
+        "online": "https://github.com/btalbot85"
+      }
+    }
+  ],
+  "IsTrusted": false
+}

@@ -1,0 +1,105 @@
+# Official Espressif options
+menu.UploadSpeed=Upload Speed
+menu.USBMode=USB Mode
+menu.CDCOnBoot=USB CDC On Boot
+menu.MSCOnBoot=USB Firmware MSC On Boot
+menu.DFUOnBoot=USB DFU On Boot
+menu.UploadMode=Upload Mode
+menu.CPUFreq=CPU Frequency
+menu.FlashFreq=Flash Frequency
+menu.FlashMode=Flash Mode
+menu.FlashSize=Flash Size
+menu.PartitionScheme=Partition Scheme
+menu.DebugLevel=Core Debug Level
+menu.PSRAM=PSRAM
+menu.LoopCore=Arduino Runs On
+menu.EventsCore=Events Run On
+menu.MemoryType=Memory Type
+menu.EraseFlash=Erase All Flash Before Sketch Upload
+menu.JTAGAdapter=JTAG Adapter
+menu.PinNumbers=Pin Numbering
+
+# Custom options
+menu.Revision=Board Revision
+menu.LORAWAN_REGION=LoRaWan Region
+menu.LoRaWanDebugLevel=LoRaWan Debug Level
+menu.LORAWAN_DEVEUI=LoRaWan DevEUI
+menu.LORAWAN_PREAMBLE_LENGTH=LoRaWan Preamble Length
+
+##############################################################
+### DO NOT PUT BOARDS ABOVE THE OFFICIAL ESPRESSIF BOARDS! ###
+##############################################################
+
+commando-24.name=Commando 2.5Ghz RNode
+
+commando-24.bootloader.tool=esptool_py
+commando-24.bootloader.tool.default=esptool_py
+
+commando-24.upload.tool=esptool_py
+commando-24.upload.tool.default=esptool_py
+commando-24.upload.tool.network=esp_ota
+
+commando-24.upload.maximum_size=1310720
+commando-24.upload.maximum_data_size=327680
+commando-24.upload.flags=
+commando-24.upload.extra_flags=
+
+commando-24.serial.disableDTR=true
+commando-24.serial.disableRTS=true
+
+commando-24.build.tarch=xtensa
+commando-24.build.bootloader_addr=0x1000
+commando-24.build.target=esp32
+commando-24.build.mcu=esp32
+commando-24.build.core=esp32
+commando-24.build.board=COMMANDO_24V1
+
+commando-24.menu.Revision.COMMANDO_24_v1=COMMANDO 2.4Ghz RNode V1 (SX1280)
+commando-24.menu.Revision.COMMANDO_24_v1.build.board=COMMANDO_24V1
+commando-24.menu.Revision.COMMANDO_24_v1.build.variant=commando-24-v1
+
+commando-24.build.f_cpu=240000000L
+commando-24.build.flash_mode=dio
+commando-24.build.flash_size=4MB
+commando-24.build.boot=dio
+commando-24.build.partitions=default
+
+commando-24.menu.FlashFreq.80=80MHz
+commando-24.menu.FlashFreq.80.build.flash_freq=80m
+commando-24.menu.FlashFreq.40=40MHz
+commando-24.menu.FlashFreq.40.build.flash_freq=40m
+
+commando-24.menu.UploadSpeed.921600=921600
+commando-24.menu.UploadSpeed.921600.upload.speed=921600
+commando-24.menu.UploadSpeed.115200=115200
+commando-24.menu.UploadSpeed.115200.upload.speed=115200
+commando-24.menu.UploadSpeed.256000.windows=256000
+commando-24.menu.UploadSpeed.256000.upload.speed=256000
+commando-24.menu.UploadSpeed.230400.windows.upload.speed=256000
+commando-24.menu.UploadSpeed.230400=230400
+commando-24.menu.UploadSpeed.230400.upload.speed=230400
+commando-24.menu.UploadSpeed.460800.linux=460800
+commando-24.menu.UploadSpeed.460800.macosx=460800
+commando-24.menu.UploadSpeed.460800.upload.speed=460800
+commando-24.menu.UploadSpeed.512000.windows=512000
+commando-24.menu.UploadSpeed.512000.upload.speed=512000
+
+commando-24.menu.DebugLevel.none=None
+commando-24.menu.DebugLevel.none.build.code_debug=0
+commando-24.menu.DebugLevel.error=Error
+commando-24.menu.DebugLevel.error.build.code_debug=1
+commando-24.menu.DebugLevel.warn=Warn
+commando-24.menu.DebugLevel.warn.build.code_debug=2
+commando-24.menu.DebugLevel.info=Info
+commando-24.menu.DebugLevel.info.build.code_debug=3
+commando-24.menu.DebugLevel.debug=Debug
+commando-24.menu.DebugLevel.debug.build.code_debug=4
+commando-24.menu.DebugLevel.verbose=Verbose
+commando-24.menu.DebugLevel.verbose.build.code_debug=5
+
+commando-24.menu.EraseFlash.none=Disabled
+commando-24.menu.EraseFlash.none.upload.erase_cmd=
+commando-24.menu.EraseFlash.all=Enabled
+commando-24.menu.EraseFlash.all.upload.erase_cmd=-e
+
+##############################################################
